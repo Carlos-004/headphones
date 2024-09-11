@@ -143,6 +143,10 @@ img {
     margin-bottom: 20px;
     background-position: right;
     background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+.modelo:hover{
+    transform: scale(1.2);
 }
 .modelo-x,
 .modelo-y{
@@ -209,6 +213,7 @@ img {
     text-transform: uppercase;
     margin-top: 20px;
 }
+
 @media (max-width:480px){
     .tagline-producto,
     .nombre-producto,
@@ -271,6 +276,13 @@ img {
     .modelo{
         margin-bottom: 0;
     }
+
+    .texto-newsletter{
+        padding: 0;
+    }
+    .formulario{
+        margin-bottom: 20px;
+    }
 }
 @media (min-width:992px) {
 
@@ -298,10 +310,16 @@ img {
     .precio-producto{
         text-align: unset;
     }
+    .descripcion-producto{
+        font-size: 16px;
+    }
 
     .contenido-newsletter {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 40px;
+    }
+    .texto-newsletter{
+        padding-left: 30px;
     }
 }
